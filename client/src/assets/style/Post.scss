@@ -1,0 +1,52 @@
+.post-list{
+  flex: 1;
+}
+.post{
+  width: 530px;
+  border-bottom: 1.8px solid lightgrey;
+  margin-bottom: 5px;
+  .postUserDetails, .postLikeCommentSvgs, .postLikesConetentViewcomments, .postComment{
+    margin-left: 5px;
+  }
+  .postUserDetails{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    .profilePicPost{
+      width: 2.3em;
+      height: 2.3em;
+    }
+  }
+  .postLikeCommentSvgs{
+    display: flex;
+    gap: 7px;
+  }
+  .postCover {
+    width: 100%;
+    object-fit: cover;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }  
+  .postComment{
+    input{
+      border-width: 0;
+      background: white;
+      margin-left: -5px;
+      width: 100%;
+    }
+    input:focus{
+      outline: none;
+    }
+    button{
+      all: unset;
+      color: #1E90FF;
+      margin-left: -28px;
+    }
+  }
+}
+.like-button {
+  all: unset;
+}

@@ -1,0 +1,51 @@
+.login, .register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .login-user, .register-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 13px;
+    border: 0.1px solid lightgrey;
+    form{
+      display: flex;
+      flex-direction: column;
+    }
+    h1{
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+    h2{
+      margin-bottom: 40px;
+    }
+  }
+  .DontHaveAccount, .HaveAccount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid lightgrey;
+    a{
+      color: #1E90FF;
+      font-weight: bold;
+      font-size: .9rem;
+    }
+  }
+  .login-user{
+    padding: 70px 47px; 
+  }
+  .register-user{
+    padding: 70px 39px;
+  }
+  .DontHaveAccount{
+    padding: 20px 71px;
+  }
+  .HaveAccount{
+    padding: 20px 90px;
+  }
+}
+.register h4{
+  color: grey;
+}

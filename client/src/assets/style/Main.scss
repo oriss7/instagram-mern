@@ -1,0 +1,81 @@
+*{
+  color: inherit;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.mainContentHome{
+  display: flex;
+  margin-left: 150px;
+  gap: 150px;
+  flex: 1;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.redLikeSvg{
+  color: red;
+  :hover{
+    color: #FFCCCB;
+  }
+}
+.pointer{
+  cursor: pointer !important;
+}
+.blackSvg:hover{
+  color: grey;
+}
+.roundImg{
+  border-radius: 50%;
+}
+.profilePicLeft{
+  width: 2em;
+  height: 2em;
+}
+.submitBtn{
+  margin-top: 5px;
+  background: #1E90FF;
+  color: white;
+  border-radius: 7px;
+  width: 270px;
+  height: 35px;
+  border: 0px solid;
+  padding: 5px 7px;
+  font-size: 17px;
+}
+.accountLink{
+  display: flex;
+  align-items: center;
+  img{
+    width: 3.5em;
+    height: 3.5em;
+    margin-right: 8px;
+  }
+  .accountInfo{
+    line-height: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  .accountName{
+    color: grey;
+  }
+}
+input{
+  background: #F8F8F8;
+  margin-bottom: 5px;
+  width: 270px;
+  height: 35px;
+  border: 0.5px solid lightgrey;
+  padding: 5px 7px;
+  border-radius: 2px;
+}
+svg{
+  width: 2em;
+}

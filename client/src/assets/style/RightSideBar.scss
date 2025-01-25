@@ -1,0 +1,10 @@
+.rightSideBar{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 110px;
+  margin-top: 25px;
+  .rightSideBarLogout{
+    color: #1E90FF;
+  }
+}

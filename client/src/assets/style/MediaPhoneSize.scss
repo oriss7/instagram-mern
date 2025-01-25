@@ -1,0 +1,152 @@
+@import url('variables.scss');
+@media screen and (max-width: 450px){
+  .app, .appHome{
+    margin: 0;
+    margin-bottom: 75px;
+    .main-app-content {
+      margin-top: 5px;
+    }
+  }
+  .searchPopup{
+    height: 100%;
+  }
+  .hover-text {
+    font-size: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .popup-overlay {
+    height: calc(100vh - 72px);
+    .popup, .popup-post{
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
+      border-radius: 0;
+      padding: 0px;
+      flex-direction: column;
+      .close-button {
+        display: none;
+      }
+    }
+    .popup-post{
+      .popupImg {
+        width: 100%;
+        height: 280px;
+        margin-right: 0;
+      }
+      .popup-post-details{
+        .userInfo-popup{
+          margin-bottom: 3px;
+          margin-top: -14px;
+        }
+        .popup-comments{
+          height: calc(100vh - 420px);
+          .post-popup-text{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .mainContentProfile{
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+    .profileAccountInfoAndPic{
+      margin-bottom: 2px;
+      .mobile-view-profile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        .profileUsername{
+          font-weight: bold;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        p{
+          line-height: 15px;
+        }
+        .mobile-view-pic-and-stats{
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          .profilePicProfile{
+            margin-left: 0px;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+          }
+          .profileStatsContainer{
+            flex-wrap: wrap;
+            .profileStatItem{
+              flex-direction: column;
+              align-items: center;
+              gap: 0;
+            }
+          }
+        }
+        .profileUsernameAndButton{
+          margin-top: 10px;
+          margin-bottom: 10px;
+          .profileBtn{
+            width: 170px;
+            height: 30px;
+          }
+        }
+      }
+      .profileAccountInfo{
+        gap: 0;
+      }
+    }
+  }  
+  .post{
+    border-bottom: none;
+    font-size: 14px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    .postcomment{
+      input{
+        width: 30%;
+      }
+    }
+  }    
+  .leftSideBar {
+    justify-content: space-between;
+    position: fixed !important;
+    flex-wrap: wrap;
+    top: unset !important;
+    flex-direction: row;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: fit-content; */
+    /* height: $mobileNavbarHeight; */
+    height: 72px;
+    border-top: 0.1px solid lightgrey;
+    padding: 10px 20px;
+    z-index: 1000;
+    border-right: none;
+    p {
+      flex-direction: row;
+      align-items: center; 
+      margin: 0 10px;
+    }
+    /*btn-img {
+      margin: 0;
+    }*/
+    .sidebar-item {
+      .btn-img {
+        transition: none;
+      }
+      &:hover {
+        background-color: inherit;
+        .btn-img {
+          transform: none;
+        }
+      }
+    }
+  }  
+}

@@ -1,0 +1,101 @@
+@media screen and (max-width: 1300px){
+  .app{
+    .leftSideBar{
+      h1, span{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 1300px){
+  .mainContentProfile{
+    width: 100%;
+    margin-left: 60px;
+    .profileAccountInfoAndPic{
+      .profilePicProfile{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-left: 0;
+      }
+    }
+  }
+  .app{
+    .leftSideBar{
+      padding: 30px 20px;
+    }
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 800px){
+  .mainContentProfile{
+    margin-left: 5px;
+    .profileAccountInfoAndPic{
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 5px;
+      .profileAccountInfo{
+        gap: 5px;
+      }
+      .profilePicProfile{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .profileUsernameAndButton{
+        .profileBtn{
+          width: 120px;
+        }
+      }
+    }
+  }
+  .hover-text {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 1300px){
+  .appHome{
+    .leftSideBar{
+      padding: 30px 20px;
+    }
+  }
+}
+@media screen and (max-width: 1300px){
+  .mainContentHome{
+    gap: 100px;
+    margin-left: 100px;
+  }
+  .appHome{
+    .leftSideBar{
+      h1, span{
+        display: none;
+      }
+    }
+  }
+  .rightSideBar{
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px){
+  .post{
+    width: 100%;
+  }
+  .mainContentHome{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1000px){
+  .mainContentHome{
+    gap: 0;
+  }
+  .rightSideBar{
+    display: none;
+  }
+}
+@media screen and (max-width: 450px){
+  .login, .register{    
+    .login-user, .register-user, .DontHaveAccount, .HaveAccount{
+      border: none;
+    }
+  }
+}

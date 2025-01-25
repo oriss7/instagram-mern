@@ -1,0 +1,17 @@
+.app, .appHome {
+	display: flex;
+	margin-left: 0;
+	.leftSideBar {
+	    position: sticky;
+	    top: 0;
+	}
+	.main-app-content {
+		margin-top: 20px;
+	}
+	@media (max-width: 750px){
+		width: 100%;
+		.main-app-content {
+			width: 100%;
+		}
+	}
+}
